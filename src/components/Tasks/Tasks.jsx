@@ -1,18 +1,19 @@
 import React from "react";
-import styles from "./tasks.module.css";
 
-const Tasks = () => {
+import styles from "./taskApp.module.css";
+
+import { TaskHeader } from "./TaskHeader";
+
+const TaskApp = () => {
   // NOTE: do not delete `data-testid` key value pair
   return (
-    <>
-      <ul data-testid="tasks" className={styles.tasks}>
-        {/* Task List */}
-      </ul>
-      <div data-testid="tasks-empty" className={styles.empty}>
-        {/* Show when No Tasks are present */}
-      </div>
-    </>
+    <div data-testid="task-app" className={styles.taskApp}>
+      {/* Header */}
+      <TaskHeader />
+      {/* Add Task */}
+      {/* Tasks */}
+    </div>
   );
 };
 
-export default Tasks;
+export default TaskApp;
